@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-  NHS.UK Nav Team
+  NHS.UK prototype kit
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -27,18 +27,29 @@
 
       <!-- Change the page title here -->
       <h1>
-        The Nav Team templates and components
-        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Last updated April 2022</span>
+        NHS.UK Information Architecture prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
       </h1>
 
-      <p><strong>The Nav Team on NHS.UK</strong> (previously known as the Information Architecture team) have been working on updating page templates and components across the website to improve users' abilities to understand what content we have, how they can find it and what else we have to offer.</p>
-      <p>This prototype is a catalogue of these templates and components, and will also include guidance about how to use them where possible.</p>
-  
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <hr>
+
       <h2>
-        New page templates
+        IA page templates
       </h2>
+      <ul>
+        <li><a href="/hub-level-1">Level 1 hub</li>
+          <li><a href="/hub-level-2">Level 2 hub</li>
+          <li><a href="/a-to-z">Health A to Z</li>
+            <li><a href="/content-page">Content page (with bottom nav)</li>
+        </ul>
 
       
+<p class="nhsuk-u-margin-top-8"><a href="components">Catalogue of all IA components</a></p>
+      <!-- End of content -->
+
     </div>
   </div>
 {% endblock %}
